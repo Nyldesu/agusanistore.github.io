@@ -1,0 +1,317 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;800&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        background-color: #F2F1EB;
+        overflow-y: hidden;
+    }
+   
+    /* Chat code start */
+
+    div.chat {
+        display:flex;
+    }
+
+    section.inbox {
+        width: 25%;
+        border: 1px solid black;
+        border-color: transparent black transparent transparent;
+        height: 100vh;
+    }
+
+    button.chatprofile {
+        position: relative;
+        left: 0px;
+        top: 250px;
+        width: 100%;
+        height: 11vh;
+        border: none;  
+        background-color: transparent; 
+        cursor: pointer;
+        transition: all .2s;
+    }
+
+    button.chatprofile:hover {
+        background-color: rgb(201, 201, 201);
+    }
+    
+    button.chatprofile img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 55px;
+        height: 55px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    div.chatprofile .profilename {
+        font-size: 1.3em;
+        position: absolute;
+        top: 10px;
+        left: 85px;
+    }
+
+    p.title {
+        color: black;
+        position: absolute;
+        top: 80px;
+        margin: 10px 0 0 15px;
+        font-size: 2em;
+        font-weight: 500;
+        font-family: Helvetica;
+        color: #222831;
+    }
+
+    form.chatsearch {
+        position: absolute;
+        top: 130px;
+    }
+
+    form.chatsearch input {
+        width: 158%;
+        height: 5vh;
+        margin: 25px 0 0 15px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    div.description {
+        position: absolute;
+        left: 700px;
+        top: 450px;
+        font-size: 4em;
+    }
+
+    div.description img {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        bottom: 90px;
+        left: 100px;
+        animation: description 1s ease .5s;
+    }
+
+    @keyframes description {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        25% {
+            transform: rotate(25deg);
+        }
+
+        50% {
+            transform: rotate(-20deg);
+        }
+
+        75% {
+            transform: rotate(20deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+
+
+    section.chatbox {
+        width: 50%;
+        height: 100vh;
+    }
+
+    div.chatnav {
+        background-color: #F2F1EB;
+        border: 1px solid black;
+        border-color: transparent transparent black transparent;
+        width: 50%;
+        height: 10vh;
+        position: fixed;
+        top: 75px;
+        
+    }
+
+    div.chatpic img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+
+    p.chatname {
+        position: absolute;
+        left: 75px;
+        top: 10px;
+        font-size: 1.2em;
+    }
+
+    div.settings {
+        position: absolute; 
+        right: 15px;
+        bottom: 10px;
+        font-size: 1.75em;
+    }
+
+    div.chatspace {
+        width: 50%;
+    }
+
+    div.chattype {
+        border: 1px solid black;
+        border-color: black transparent transparent transparent;
+        width: 50%;
+        height: 10vh;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    div.chattype button.file {
+        padding: 25px;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 9.5px;
+        left: 10px;
+        border-radius: 25px;
+        cursor: pointer;
+        border: none;
+        transition: all .1.5s;
+        background-color: transparent;
+    }
+
+    div.chattype button .fa-file {
+        position: absolute;
+        top: 15px;
+        right: 17px;
+        font-size: 1.5em;
+    }
+
+    div.chattype button:hover {
+        background-color: rgb(225, 222, 222);
+    }
+
+    div.chattype button:active {
+        background-color: rgb(188, 188, 188);
+    }
+
+    div.filebox {
+        background-color: #F2F1EB;
+        border: 1px solid black;
+        width: fit-content;
+        height: fit-content;
+        padding: 15px;
+        position: absolute;
+        bottom: 69px;
+        left: 10px;
+        border-radius: 10px;
+        transition: all .2s;
+    }
+
+    div.filebox button {
+        position: absolute;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 12.5px;
+        border: none;
+        background-color: #F2F1EB;
+        cursor: pointer;
+    }
+
+    div.filebox form {
+        cursor: pointer;
+    }
+
+    div.type {
+        position: absolute;
+        left: 70px;
+        top: 14px;
+    }
+
+    div.type input {
+        width: 350%;
+        height: 6vh;
+        border-radius: 20px;
+        border: 2px solid black;
+        text-indent: 20px;
+        text-wrap: wrap;
+    }
+
+    div.typebox {
+        border: 2px solid black;
+        border-radius: 30px;
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        top: -6px;
+        padding: 10px 15px 10px 10px;
+        background-color: white;
+    }
+
+    textarea.type {
+        resize: none;
+        font-size: 1em;
+        position: relative;
+        top: 3px;
+        left: 5px;
+        overflow: hidden;
+        width: 595px;
+        margin: 0;
+        border: none;
+        outline: none;
+    }
+
+    textarea.type::placeholder {
+        font-size: 1em;
+    }
+
+    button.send {
+        position: absolute;
+        left: 635px;
+        top: -1px;
+        padding: 25px;
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        background-color: transparent;
+        border: none;
+    }
+
+    button.send .fa-paper-plane {
+        position: absolute;
+        top: 15px;
+        right: 17px;
+        font-size: 1.5em;
+    }
+
+    button.send:hover {
+        background-color: rgb(225, 222, 222);
+    }
+
+    button.send:active {
+        background-color: rgb(188, 188, 188);
+    }
+
+    section.profile {
+        width: 25%;
+        height: 100vh;
+        border: 1px solid black; 
+        border-color: transparent transparent transparent black;
+    }
+
+

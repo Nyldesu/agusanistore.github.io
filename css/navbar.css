@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Poppins', sans-serif ;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #222831;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav img {
+    margin: auto;
+    margin-left: 340px;
+    height: 45px;
+    padding: 2px;
+    top: 10px;
+    left: 10px;
+    border: 3px solid white;
+    border-radius: 50px;
+    filter: drop-shadow(2px 2px 1px #2b2b2b4d);
+}
+
+.navbar .title-name h1{
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-left: 15px;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    filter: drop-shadow(2px 2px 1px #2b2b2b4d);
+    opacity: 1;
+}
+
+.navbar .title-name h1:hover{
+    color: #3559E0;
+    opacity: 0.5;
+}
+
+
+nav span{
+    color: #fff;
+    font-weight: 200;
+    font-size: 1rem;  
+}
+
+nav ul{
+    position: relative;
+    list-style: none;
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 0.9rem;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #333;
+}
+
+.navul li a:hover:not(.optionsbtn) {
+    opacity: 0.8;
+}
+
+nav .fa-solid:not(button .fa-solid){
+    margin-right: 15px;
+    color: #fff;
+}
+
+.searchbar{
+    margin-left: 30px;
+    width: 280px;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.searchbar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+::placeholder{
+    color: #cbcbcb;
+    font-size: 0.8rem;
+}
+
+.searchbar button{
+    border: 0;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+}
+
+.navbar .searchbar button .fa-solid{
+    color: #cbcbcb;
+    font-size: 1rem;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    width: max-content;
+    top: 100%;
+    left: 10px;
+    text-align: left;
+    background-color: #222831;
+    transition: all ease 0.2s;
+}
+
+nav ul li:hover .dropdown{
+    display: block;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 15px;
+    color: #ddd;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown li a:hover {
+    opacity: 0.7;
+    background-color: #ddd;
+    color: #222831;
+}
+/* END OF NAVBAR */
+
+@media screen and (max-width: 1200px){
+    .searchbar{
+        width: 250px;
+    }
+
+    nav img{
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .searchbar {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1500px)
+{
+    .searchbar{
+        width: 550px;
+    }
+}
